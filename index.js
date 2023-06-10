@@ -12,7 +12,8 @@ app.use(morgan('common'));
 app.use(cors({
     credentials:true,
     origin:[
-        'http://localhost:3000'
+        'http://localhost:3000',
+        'https://assignment-frontend-seven.vercel.app'
     ]
 }));
 app.use('/',indexRouter);
