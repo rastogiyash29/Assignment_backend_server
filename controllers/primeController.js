@@ -7,7 +7,7 @@ const getPrimeNumbers=async(req,res)=>{
         if(isNaN(number)){
           return res.send(error(400,"Passed values is not a number"));
         }
-        if(number>1e9){
+        if(number>1e6){
           return res.send(error(400,"Number value is too larger"));
         }
         const allPrimes=getPrimes(Number(number))
